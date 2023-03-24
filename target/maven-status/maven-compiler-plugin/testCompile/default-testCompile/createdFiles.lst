@@ -1,0 +1,3 @@
+org\jacoco\examples\maven\java\HelloWorldTest.class
+com\devopshint\StringPalindrome\AppTest.class
+org\jacoco\examples\maven\java\HelloWorld.class
