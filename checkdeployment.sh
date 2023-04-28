@@ -9,7 +9,7 @@ APP_NAME="MoonPageWebApp"
 APP_URL="http://3.111.43.66:8080/$APP_NAME/"
 
 # Check if the application is running
-APP_STATUS=$(curl --silent --user $TOMCAT_USER:$TOMCAT_PASSWORD "http://localhost:8080/manager/text/list" | grep -F "$APP_NAME:running")
+APP_STATUS=$(curl --silent --user $TOMCAT_USER:$TOMCAT_PASSWORD "http://3.111.43.66:8080/manager/text/list" | grep -F "$APP_NAME:running")
 if [ -n "$APP_STATUS" ]; then
   echo "Application $APP_NAME is running"
 else
