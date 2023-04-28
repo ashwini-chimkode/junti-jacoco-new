@@ -50,6 +50,20 @@
                 </reportSet>
             </reportSets>
         </plugin -->
+	
+	<plugin>
+            	<groupId>org.owasp</groupId>
+            	<artifactId>dependency-check-maven</artifactId>
+            	<version>8.0.1</version>
+            <reportSets>
+                <reportSet>
+                    <reports>
+                        <report>check</report>
+                    </reports>
+                </reportSet>
+            </reportSets>
+        </plugin>
+
 
 </plugins>
 </reporting>
@@ -95,6 +109,25 @@
                 </execution>
             </executions>
 </plugin -->
+
+			<plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>8.0.1</version>
+            <configuration>
+                <format>ALL</format>
+                <suppressionFiles>
+                    <suppressionFlie>dependency-check-suppressions.xml</suppressionFlie>
+                </suppressionFiles>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+</plugin>
 
 
 			<plugin>
