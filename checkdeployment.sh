@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the Tomcat manager credentials
-TOMCAT_USER="admin"
-TOMCAT_PASSWORD="admin"
+TOMCAT_USER="tomcat"
+TOMCAT_PASSWORD="tomcat123"
 
 # Set the application name and URL
 APP_NAME="MoonPageWebApp"
