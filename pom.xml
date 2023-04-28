@@ -5,7 +5,7 @@
   <artifactId>javademoproject</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>MoonFramApp</name>
+<!--   <name>MoonFramApp</name> -->
   <url>http://maven.apache.org</url>
 
 	<properties>
